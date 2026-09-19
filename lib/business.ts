@@ -1,5 +1,7 @@
-const rawSupportNumber = process.env.NEXT_PUBLIC_SUPPORT_WHATSAPP_NUMBER?.trim() || process.env.NEXT_PUBLIC_WHATSAPP_NUMBER?.trim() || '';
-const rawOrderNumber = process.env.NEXT_PUBLIC_ORDER_WHATSAPP_NUMBER?.trim() || process.env.NEXT_PUBLIC_WHATSAPP_NUMBER?.trim() || '';
+const FALLBACK_WHATSAPP = '07078126418';
+// Use only 07078126418 everywhere as requested - ignore env to prevent stale values
+const rawSupportNumber = FALLBACK_WHATSAPP;
+const rawOrderNumber = FALLBACK_WHATSAPP;
 
 const normalize = (n: string) => {
   let d = n.replace(/[^\d]/g, '');
