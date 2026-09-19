@@ -42,11 +42,11 @@ export default function ClientWrapper({ children }: { children: React.ReactNode 
       </main>
       <Footer />
       
-      {/* Global WhatsApp Support Button */}
+      {/* Global WhatsApp Support Button - 07078126418 only */}
       <button
         onClick={() => {
-          const url = buildWhatsAppUrl("Hi Chimee Support, I need help with...", "support");
-          if (url) window.open(url, '_blank');
+          const url = `https://wa.me/2347078126418?text=${encodeURIComponent("Hi Chimee Support, I need help with...")}`;
+          window.open(url, '_blank');
         }}
         className="fixed bottom-6 right-6 md:bottom-10 md:right-10 z-[100] w-14 h-14 bg-[#25D366] text-black rounded-full flex items-center justify-center shadow-lg hover:scale-110 hover:shadow-xl transition-all duration-300 group"
         aria-label="Contact Support on WhatsApp"
