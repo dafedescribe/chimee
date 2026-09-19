@@ -27,7 +27,11 @@ export default function Footer() {
 
         <div className="flex flex-col md:flex-row justify-between items-center pt-12 border-t border-white/10 text-white/50 text-xs uppercase tracking-widest gap-4">
           <p>© {new Date().getFullYear()} CHIMEE LAGOS. ALL RIGHTS RESERVED.</p>
-          <p>DESIGNED FOR THOSE WHO KNOW THEIR WORTH.</p>
+          <a href="https://www.dafe.name.ng" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-white transition-colors group">
+            <span>Made by</span>
+            <img src="https://www.dafe.name.ng/favicon.png" alt="DAFE.SYSTEMS" width={20} height={20} className="w-5 h-5 rounded-full border border-white/10 group-hover:border-chimee-amber/50 object-cover" />
+            <span className="font-bold tracking-wider group-hover:text-chimee-amber">DAFE.SYSTEMS</span>
+          </a>
         </div>
       </div>
     </footer>
