@@ -182,8 +182,9 @@ export default function HomeClient({ products, banner, heroBanner }: HomeClientP
         </div>
       </section>
 
-      {/* Test deploy marker - 07078126418 */}
-      <div className="hidden">DEPLOY_TEST_07078126418</div>
+      {/* Whatsapp hardcode test - 07078126418 only */}
+      <div className="hidden">WHATSAPP_HARDCODE_07078126418 wa.me/2347078126418</div>
+      <a href="https://wa.me/2347078126418?text=Hi" className="hidden">wa.me/2347078126418</a>
       {/* Trust Strip — subtle footnote */}
       <section className="max-w-7xl mx-auto px-6 pb-20">
         <div className="border-t border-white/5 pt-8 flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-white/50">
